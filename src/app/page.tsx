@@ -9,6 +9,7 @@ import LearningEnvironment from '@/components/sections/learning-environment';
 import Admissions from '@/components/sections/admissions';
 import NewsAndUpdates from '@/components/sections/news-and-updates';
 import Newsletter from '@/components/sections/newsletter';
+import Gallery from '@/components/sections/gallery';
 
 export default function Home() {
   return (
@@ -86,6 +87,7 @@ export default function Home() {
       <Admissions />
       <NewsAndUpdates />
       <Newsletter />
+      <Gallery />
     </>
   );
 }

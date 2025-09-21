@@ -44,39 +44,51 @@
     },
     {
       "id": "gallery-1",
-      "description": "Students at a sports day event.",
+      "description": "School event on stage.",
       "imageUrl": "https://picsum.photos/seed/gallery1/600/400",
-      "imageHint": "sports day"
+      "imageHint": "school event"
     },
     {
       "id": "gallery-2",
-      "description": "Students receiving awards on stage.",
+      "description": "Students in uniform exercising outdoors.",
       "imageUrl": "https://picsum.photos/seed/gallery2/600/400",
-      "imageHint": "award ceremony"
+      "imageHint": "students outdoors"
     },
     {
       "id": "gallery-3",
-      "description": "School choir performing.",
+      "description": "Group of people standing around a rangoli.",
       "imageUrl": "https://picsum.photos/seed/gallery3/600/400",
-      "imageHint": "school choir"
+      "imageHint": "rangoli celebration"
     },
     {
       "id": "gallery-4",
-      "description": "Students on a field trip.",
+      "description": "Traditional dance performance on stage.",
       "imageUrl": "https://picsum.photos/seed/gallery4/600/400",
-      "imageHint": "field trip"
+      "imageHint": "dance performance"
     },
     {
       "id": "gallery-5",
-      "description": "Science fair projects.",
+      "description": "Newspaper article about the school.",
       "imageUrl": "https://picsum.photos/seed/gallery5/600/400",
-      "imageHint": "science fair"
+      "imageHint": "newspaper article"
     },
     {
       "id": "gallery-6",
-      "description": "Annual day celebration.",
+      "description": "Entrance gate of Prabhawati VidyaPeeth.",
       "imageUrl": "https://picsum.photos/seed/gallery6/600/400",
-      "imageHint": "annual day"
+      "imageHint": "school entrance"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Group photo of students and teachers.",
+      "imageUrl": "https://picsum.photos/seed/gallery7/600/400",
+      "imageHint": "group photo"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Large assembly of students in uniform.",
+      "imageUrl": "https://picsum.photos/seed/gallery8/600/400",
+      "imageHint": "student assembly"
     }
   ]
 }

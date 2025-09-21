@@ -10,7 +10,7 @@ export default function GalleryGrid({ images }: { images: ImagePlaceholder[] }) 
 
     return (
         <>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {images.map((image) => (
                     <button
                         key={image.id}
@@ -22,7 +22,7 @@ export default function GalleryGrid({ images }: { images: ImagePlaceholder[] }) 
                             alt={image.description}
                             fill
                             className="object-cover transition-transform duration-300 group-hover:scale-110"
-                            sizes="(max-width: 768px) 50vw, 33vw"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
                             data-ai-hint={image.imageHint}
                         />
                          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-end justify-center">
@@ -41,6 +41,7 @@ export default function GalleryGrid({ images }: { images: ImagePlaceholder[] }) 
                                 alt={selectedImage.description}
                                 fill
                                 className="object-contain"
+                                sizes="100vw"
                                 data-ai-hint={selectedImage.imageHint}
                             />
                         </div>

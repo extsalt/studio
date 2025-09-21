@@ -104,8 +104,8 @@ export const admissionsData = {
 };
 
 export const galleryData = {
-    title: "Gallery",
-    description: "A glimpse into life at Acme Academy. Explore our events, activities, and the vibrant student community.",
+    title: "Photo Gallery",
+    description: "Capturing moments and memories from our school life",
     images: [
         getImage('gallery-1'),
         getImage('gallery-2'),
@@ -113,6 +113,8 @@ export const galleryData = {
         getImage('gallery-4'),
         getImage('gallery-5'),
         getImage('gallery-6'),
+        getImage('gallery-7'),
+        getImage('gallery-8'),
     ],
 };
 
