@@ -16,7 +16,7 @@ const MessageCard = ({ name, title, message, bio, image, reverse = false }: { na
           data-ai-hint={image.imageHint}
         />
       </div>
-      <div className={`p-8 md:p-12 flex flex-col justify-center ${reverse ? 'md:col-span-3' : 'md:col-span-3'}`}>
+      <div className={`p-8 md:p-12 flex flex-col justify-center text-center ${reverse ? 'md:col-span-3' : 'md:col-span-3'}`}>
         <h3 className="text-3xl font-bold font-headline text-primary">{name}</h3>
         <p className="text-muted-foreground font-semibold mb-6">{title}</p>
         <blockquote className="border-l-4 border-accent pl-6 italic text-lg text-foreground/80">
