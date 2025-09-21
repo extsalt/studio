@@ -13,6 +13,7 @@ import Gallery from '@/components/sections/gallery';
 import Testimonials from '@/components/sections/testimonials';
 import UpcomingEvents from '@/components/sections/upcoming-events';
 import Footer from '@/components/layout/footer';
+import Contact from '@/components/sections/contact';
 
 export default function Home() {
   return (
@@ -92,6 +93,7 @@ export default function Home() {
       <Newsletter />
       <Gallery />
       <Testimonials />
+      <Contact />
       <UpcomingEvents />
       <Footer />
     </>

@@ -120,12 +120,17 @@ export const galleryData = {
 
 export const contactData = {
     title: "Get in Touch",
-    description: "We'd love to hear from you. Please fill out the form below or use our contact details to reach us.",
-    address: "123 Education Lane, Learning City, 12345",
-    phone: "+1 (234) 567-890",
-    email: "info@acmeacademy.edu",
+    description: "We're here to answer any questions you may have",
+    address: "Rajauli, Sahatwar, Ballia District, Utter Pradesh, India - 277211",
+    phone: "+91 945274 6680",
+    email: "prabhawati9452@gmail.com",
+    officeHours: [
+        { days: "Monday - Friday", time: "8:00 AM - 4:00 PM" },
+        { days: "Saturday", time: "9:00 AM - 12:00 PM" },
+        { days: "Sunday", time: "Closed" },
+    ],
     map: {
-      center: { lat: 37.7749, lng: -122.4194 },
+      center: { lat: 25.808, lng: 84.281 }, // Approximate coordinates for Ballia
       zoom: 13,
     }
 };

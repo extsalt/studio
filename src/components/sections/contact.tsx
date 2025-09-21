@@ -1,6 +1,5 @@
 import { contactData } from '@/lib/data';
 import ContactForm from '../client/contact-form';
-import MapComponent from '../client/map';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
@@ -12,8 +11,11 @@ export default function Contact() {
           <p className="mt-4 text-lg text-muted-foreground">{contactData.description}</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <div className="bg-card p-8 rounded-lg shadow-xl h-full">
+             <ContactForm />
+          </div>
+          <div className="space-y-8 bg-card p-8 rounded-lg shadow-xl">
             <h3 className="text-2xl font-semibold">Contact Information</h3>
             <div className="space-y-4 text-muted-foreground">
                 <div className="flex items-start gap-4">
@@ -29,12 +31,17 @@ export default function Contact() {
                     <a href={`mailto:${contactData.email}`} className="hover:text-primary transition-colors">{contactData.email}</a>
                 </div>
             </div>
-            <div className="h-80 w-full rounded-lg overflow-hidden shadow-lg">
-                <MapComponent />
+             <div>
+                <h3 className="text-2xl font-semibold mb-4">Office Hours</h3>
+                <div className="space-y-2 text-muted-foreground">
+                    {contactData.officeHours.map((item, index) => (
+                        <div key={index} className="flex justify-between">
+                            <span>{item.days}</span>
+                            <span>{item.time}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
-          </div>
-          <div className="bg-card p-8 rounded-lg shadow-xl">
-             <ContactForm />
           </div>
         </div>
       </div>
