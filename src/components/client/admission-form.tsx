@@ -44,7 +44,7 @@ export default function AdmissionForm() {
 
     return (
         <Card className="shadow-xl bg-card text-card-foreground">
-            <CardHeader>
+            <CardHeader className="text-center">
                 <CardTitle>Admission Inquiry</CardTitle>
                 <CardDescription>Fill out the form below to begin the admission process.</CardDescription>
             </CardHeader>
