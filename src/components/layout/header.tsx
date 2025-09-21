@@ -8,6 +8,12 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/ui/logo';
 import { siteConfig } from '@/lib/data';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,6 +52,21 @@ export default function Header() {
               <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                 <div className="flex flex-col space-y-4">
                   {siteConfig.navLinks.map((link) => (
+                    'items' in link ? (
+                      <div key={link.label} className="space-y-2">
+                         <h4 className="font-semibold">{link.label}</h4>
+                         {link.items.map(item => (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setIsOpen(false)}
+                                className="block text-lg font-medium text-muted-foreground transition-colors hover:text-foreground pl-2"
+                            >
+                                {item.label}
+                            </Link>
+                         ))}
+                      </div>
+                    ) : (
                     <Link
                       key={link.href}
                       href={link.href}
@@ -54,6 +75,7 @@ export default function Header() {
                     >
                       {link.label}
                     </Link>
+                    )
                   ))}
                 </div>
               </div>
@@ -69,16 +91,34 @@ export default function Header() {
         
         <nav className="hidden md:flex md:items-center md:space-x-8 text-sm font-medium">
           {siteConfig.navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "transition-colors hover:text-primary",
-                isScrolled ? "text-foreground/80" : "text-primary-foreground"
-              )}
-            >
-              {link.label}
-            </Link>
+            'items' in link ? (
+              <DropdownMenu key={link.label}>
+                <DropdownMenuTrigger className={cn(
+                  "transition-colors hover:text-primary focus:outline-none",
+                  isScrolled ? "text-foreground/80" : "text-primary-foreground"
+                )}>
+                  {link.label}
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  {link.items.map(item => (
+                    <DropdownMenuItem key={item.href} asChild>
+                      <Link href={item.href}>{item.label}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "transition-colors hover:text-primary",
+                  isScrolled ? "text-foreground/80" : "text-primary-foreground"
+                )}
+              >
+                {link.label}
+              </Link>
+            )
           ))}
         </nav>
         

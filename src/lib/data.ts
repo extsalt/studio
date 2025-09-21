@@ -14,10 +14,22 @@ export const siteConfig = {
     description: "Excellence in Education. Nurturing young minds for a brighter future.",
     navLinks: [
       { href: '#home', label: 'Home' },
-      { href: '#about', label: 'About' },
-      { href: '#classes', label: 'Classes' },
-      { href: '#admissions', label: 'Admissions' },
-      { href: '#gallery', label: 'Gallery' },
+      { 
+        label: 'About',
+        href: '#about',
+        items: [
+            { href: '#about', label: 'Our Mission' },
+            { href: '#gallery', label: 'Gallery' },
+        ]
+      },
+      { 
+        label: 'Academics',
+        href: '#classes',
+        items: [
+            { href: '#classes', label: 'Classes' },
+            { href: '#admissions', label: 'Admissions' },
+        ]
+      },
       { href: '#contact', label: 'Contact' },
     ],
 };
