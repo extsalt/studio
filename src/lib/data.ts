@@ -127,3 +127,54 @@ export const contactData = {
       zoom: 13,
     }
 };
+
+export const newsAndUpdatesData = {
+  title: 'School News & Updates',
+  description: 'Stay updated with the latest happenings at our school',
+  featuredNews: {
+    date: 'June 15, 2024',
+    title: 'Annual Science Fair 2024: Innovation Unleashed',
+    description: 'Join us for an extraordinary showcase of student innovations and scientific discoveries at our upcoming Annual Science Fair...',
+    link: '#',
+  },
+  otherNews: [
+    {
+      date: 'June 12, 2024',
+      title: 'Students Win National Debate Championship',
+      description: 'Our debate team secured first place in the National School Debate Championship...',
+      link: '#',
+    },
+    {
+      date: 'June 9, 2024',
+      title: 'New STEM Lab Inauguration',
+      description: 'State-of-the-art STEM laboratory equipped with latest technology...',
+      link: '#',
+    },
+    {
+      date: 'June 7, 2024',
+      title: 'Cultural Festival Announcement',
+      description: 'Mark your calendars for our annual cultural festival celebration...',
+      link: '#',
+    },
+  ],
+  latestUpdates: [
+    {
+      date: 'June 10, 2024',
+      title: 'Sports Day Registration Now Open',
+      link: '#',
+      color: 'bg-green-500',
+    },
+    {
+      date: 'June 8, 2024',
+      title: 'Parent-Teacher Meeting Schedule',
+      link: '#',
+      color: 'bg-yellow-500',
+    },
+    {
+      date: 'June 5, 2024',
+      title: 'New Library Resources Available',
+      link: '#',
+      color: 'bg-purple-500',
+    },
+  ],
+};
