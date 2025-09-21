@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { MenuBarDemo } from '@/components/layout/menubar';
 import HistoryAndValues from '@/components/sections/history-and-values';
 import EducationalPrograms from '@/components/sections/educational-programs';
+import LearningEnvironment from '@/components/sections/learning-environment';
 
 export default function Home() {
   return (
@@ -78,6 +79,7 @@ export default function Home() {
       </div>
       <HistoryAndValues />
       <EducationalPrograms />
+      <LearningEnvironment />
     </>
   );
 }
