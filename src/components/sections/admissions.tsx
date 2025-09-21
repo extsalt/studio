@@ -12,7 +12,7 @@ export default function Admissions() {
               <h2 className="text-3xl font-bold font-headline md:text-4xl">{admissionsData.title}</h2>
               <p className="mt-4 text-lg text-muted-foreground">{admissionsData.description}</p>
             </div>
-            <ol className="space-y-6">
+            <ol className="space-y-6 max-w-md mx-auto">
               {admissionsData.steps.map((step, index) => (
                 <li key={index} className="flex items-start justify-center">
                   <div className="flex-shrink-0">
