@@ -21,14 +21,14 @@ export default function Home() {
         <div className="flex-grow flex items-center justify-center">
           <div className="container mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-8 text-center lg:text-left">
+              <div className="space-y-8 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold">
                   Leading UPMSP School in Ballia | Prabhawati VidyaPeeth
                 </h1>
                 <p className="text-lg text-foreground/80">
                   Excellence in Education Since 2010 | Nurturing Future Leaders
                 </p>
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                <div className="flex flex-wrap justify-center gap-4">
                   <Button size="lg" variant="secondary" className="bg-white text-blue-900 hover:bg-gray-200">
                     Apply Now
                   </Button>
@@ -36,7 +36,7 @@ export default function Home() {
                     Virtual Tour
                   </Button>
                 </div>
-                <div className="flex justify-center lg:justify-start space-x-8 pt-6">
+                <div className="flex justify-center space-x-8 pt-6">
                   <div className="text-center">
                     <p className="text-3xl font-bold">1500+</p>
                     <p className="text-sm text-foreground/70">Students</p>
