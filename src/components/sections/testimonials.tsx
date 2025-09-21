@@ -34,11 +34,6 @@ export default function Testimonials() {
 
         {/* Main Testimonial */}
         <div className="relative max-w-3xl mx-auto mb-16">
-          <div className="absolute -top-6 -left-6 z-0">
-             <div className="bg-primary rounded-full p-3 text-primary-foreground">
-                <Quote className="h-8 w-8" />
-             </div>
-          </div>
           <Card className="shadow-2xl rounded-xl p-8 bg-secondary">
             <blockquote className="text-center text-xl font-medium text-card-foreground">
               &ldquo;{mainTestimonial.quote}&rdquo;
