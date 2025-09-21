@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A modern school building exterior.",
+      "imageUrl": "https://picsum.photos/seed/hero/1600/900",
+      "imageHint": "school building"
+    },
+    {
+      "id": "principal",
+      "description": "Portrait of the school principal.",
+      "imageUrl": "https://picsum.photos/seed/principal/400/400",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "chairman",
+      "description": "Portrait of the school chairman.",
+      "imageUrl": "https://picsum.photos/seed/chairman/400/400",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "class-math",
+      "description": "Students learning math in a classroom.",
+      "imageUrl": "https://picsum.photos/seed/class-math/600/400",
+      "imageHint": "students classroom"
+    },
+    {
+      "id": "class-science",
+      "description": "Students doing a science experiment.",
+      "imageUrl": "https://picsum.photos/seed/class-science/600/400",
+      "imageHint": "science experiment"
+    },
+    {
+      "id": "class-art",
+      "description": "Students painting in an art class.",
+      "imageUrl": "https://picsum.photos/seed/class-art/600/400",
+      "imageHint": "art class"
+    },
+    {
+      "id": "class-music",
+      "description": "Students playing musical instruments.",
+      "imageUrl": "https://picsum.photos/seed/class-music/600/400",
+      "imageHint": "music class"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Students at a sports day event.",
+      "imageUrl": "https://picsum.photos/seed/gallery1/600/400",
+      "imageHint": "sports day"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Students receiving awards on stage.",
+      "imageUrl": "https://picsum.photos/seed/gallery2/600/400",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "gallery-3",
+      "description": "School choir performing.",
+      "imageUrl": "https://picsum.photos/seed/gallery3/600/400",
+      "imageHint": "school choir"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Students on a field trip.",
+      "imageUrl": "https://picsum.photos/seed/gallery4/600/400",
+      "imageHint": "field trip"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Science fair projects.",
+      "imageUrl": "https://picsum.photos/seed/gallery5/600/400",
+      "imageHint": "science fair"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Annual day celebration.",
+      "imageUrl": "https://picsum.photos/seed/gallery6/600/400",
+      "imageHint": "annual day"
+    }
+  ]
 }
