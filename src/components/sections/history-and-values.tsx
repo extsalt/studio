@@ -54,7 +54,7 @@ export default function HistoryAndValues() {
           <div className="w-24 h-1 bg-primary mx-auto mt-2"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
+        <div className="grid md:grid-cols-3 gap-8 mb-24 text-center">
           {values.map((item) => (
             <Card key={item.title} className="text-center p-8 bg-background shadow-lg">
               <div className="flex justify-center mb-4">
@@ -73,9 +73,9 @@ export default function HistoryAndValues() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 max-w-lg mx-auto text-center">
             <h3 className="text-3xl font-bold text-card-foreground">Why Choose Us?</h3>
-            <ul className="space-y-6 text-left">
+            <ul className="space-y-6 text-center">
                 {features.map((feature) => (
-                    <li key={feature.title} className="flex items-start gap-4">
+                    <li key={feature.title} className="flex items-center flex-col gap-4">
                         <div className="flex-shrink-0">{feature.icon}</div>
                         <div>
                             <h4 className="font-semibold text-lg text-card-foreground">{feature.title}</h4>
