@@ -37,7 +37,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="flex flex-col shadow-lg rounded-lg overflow-hidden bg-secondary">
               <CardHeader className="p-6 flex-grow">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex flex-col items-center justify-center gap-4 mb-4 text-center">
                     <Avatar>
                         <AvatarFallback className={cn(testimonial.avatarBg, testimonial.avatarText, 'font-bold')}>
                             {testimonial.initial}
@@ -48,11 +48,11 @@ export default function Testimonials() {
                         <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                     </div>
                 </div>
-                <blockquote className="text-card-foreground/80">
+                <blockquote className="text-card-foreground/80 text-center">
                   &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
               </CardHeader>
-              <CardContent className="p-6 border-t">
+              <CardContent className="p-6 border-t flex justify-center">
                 <StarRating rating={testimonial.rating} />
               </CardContent>
             </Card>
