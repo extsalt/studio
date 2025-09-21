@@ -8,7 +8,7 @@ export default function Admissions() {
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl font-bold font-headline md:text-4xl">{admissionsData.title}</h2>
               <p className="mt-4 text-lg text-muted-foreground">{admissionsData.description}</p>
             </div>
