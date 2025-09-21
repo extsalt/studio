@@ -55,17 +55,17 @@ export default function Home() {
               </div>
 
               <div className="w-full max-w-md mx-auto">
-                <Card>
+                <Card className="bg-foreground text-background">
                   <CardHeader>
-                    <CardTitle className="text-center text-2xl font-bold text-card-foreground">Enquire Now</CardTitle>
+                    <CardTitle className="text-center text-2xl font-bold">Enquire Now</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <form className="space-y-4">
-                      <Input type="text" placeholder="Full Name" />
-                      <Input type="email" placeholder="Email Address" />
-                      <Input type="tel" placeholder="Phone Number" />
+                      <Input type="text" placeholder="Full Name" className="bg-background/10 text-foreground border-border/50 placeholder:text-muted-foreground/80 focus:bg-background/20" />
+                      <Input type="email" placeholder="Email Address" className="bg-background/10 text-foreground border-border/50 placeholder:text-muted-foreground/80 focus:bg-background/20" />
+                      <Input type="tel" placeholder="Phone Number" className="bg-background/10 text-foreground border-border/50 placeholder:text-muted-foreground/80 focus:bg-background/20" />
                       <Select>
-                        <SelectTrigger>
+                        <SelectTrigger className="bg-background/10 text-foreground border-border/50 placeholder:text-muted-foreground/80 focus:bg-background/20">
                           <SelectValue placeholder="Select Program" />
                         </SelectTrigger>
                         <SelectContent>
@@ -74,7 +74,7 @@ export default function Home() {
                           <SelectItem value="arts">Arts</SelectItem>
                         </SelectContent>
                       </Select>
-                      <Button type="submit" className="w-full">
+                      <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                         Submit Enquiry
                       </Button>
                     </form>
