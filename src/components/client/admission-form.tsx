@@ -43,7 +43,7 @@ export default function AdmissionForm() {
     };
 
     return (
-        <Card className="shadow-xl">
+        <Card className="shadow-xl bg-foreground text-background">
             <CardHeader>
                 <CardTitle>Admission Inquiry</CardTitle>
                 <CardDescription>Fill out the form below to begin the admission process.</CardDescription>
