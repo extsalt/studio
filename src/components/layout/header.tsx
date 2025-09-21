@@ -34,7 +34,7 @@ export default function Header() {
     )}>
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
-          <Logo />
+          <Logo className={cn(isScrolled ? "text-primary" : "text-primary-foreground")} />
         </div>
         
         <div className="md:hidden">
@@ -45,7 +45,7 @@ export default function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="pr-0">
+            <SheetContent side="left" className="pr-0 bg-background">
               <div className="flex items-center justify-between p-6 border-b">
                 <Logo />
               </div>
@@ -85,7 +85,7 @@ export default function Header() {
         
         <div className="flex flex-1 items-center justify-center md:justify-start">
             <div className="md:hidden">
-                <Logo />
+                <Logo className={cn(isScrolled ? "text-primary" : "text-primary-foreground")} />
             </div>
         </div>
         
