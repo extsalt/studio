@@ -1,4 +1,3 @@
-import { CheckCircle } from 'lucide-react';
 import { admissionsData } from '@/lib/data';
 import AdmissionForm from '../client/admission-form';
 
@@ -6,7 +5,7 @@ export default function Admissions() {
   return (
     <section id="admissions" className="py-16 md:py-24 bg-secondary/30">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div className="space-y-8">
             <div className="text-center lg:text-left">
               <h2 className="text-3xl font-bold font-headline md:text-4xl">{admissionsData.title}</h2>
