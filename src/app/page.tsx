@@ -11,6 +11,7 @@ import NewsAndUpdates from '@/components/sections/news-and-updates';
 import Newsletter from '@/components/sections/newsletter';
 import Gallery from '@/components/sections/gallery';
 import Testimonials from '@/components/sections/testimonials';
+import UpcomingEvents from '@/components/sections/upcoming-events';
 
 export default function Home() {
   return (
@@ -90,6 +91,7 @@ export default function Home() {
       <Newsletter />
       <Gallery />
       <Testimonials />
+      <UpcomingEvents />
     </>
   );
 }

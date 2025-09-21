@@ -219,3 +219,31 @@ export const testimonialsData = {
     },
   ],
 };
+
+export const upcomingEventsData = {
+  title: 'Upcoming School Events',
+  description: 'Stay connected with our vibrant school community',
+  events: [
+    {
+      title: 'Annual Sports Day',
+      date: 'December 15, 2024',
+      description: 'Join us for a day of athletic excellence and team spirit.',
+      color: 'bg-blue-600',
+      buttonColor: 'bg-blue-600 hover:bg-blue-700',
+    },
+    {
+      title: 'Science Fair',
+      date: 'January 20, 2025',
+      description: 'Discover amazing student projects and innovative ideas.',
+      color: 'bg-green-600',
+      buttonColor: 'bg-green-600 hover:bg-green-700',
+    },
+    {
+      title: 'Cultural Festival',
+      date: 'February 10, 2025',
+      description: 'Celebrate diversity through music, dance, and art.',
+      color: 'bg-purple-600',
+      buttonColor: 'bg-purple-600 hover:bg-purple-700',
+    },
+  ],
+};
