@@ -5,7 +5,7 @@ import ClassDescriptionGenerator from '../client/class-description-generator';
 
 export default function Classes() {
   return (
-    <section id="classes" className="py-16 md:py-24 bg-secondary/30">
+    <section id="classes" className="py-16 md:py-24 bg-background">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold font-headline md:text-4xl">{classesData.title}</h2>
