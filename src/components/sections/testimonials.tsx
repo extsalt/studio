@@ -19,7 +19,7 @@ const StarRating = ({ rating, className }: { rating: number; className?: string 
 );
 
 export default function Testimonials() {
-  const { title, description, mainTestimonial, testimonials } = testimonialsData;
+  const { title, description, testimonials } = testimonialsData;
 
   return (
     <section className="py-16 md:py-24 bg-card">
@@ -30,19 +30,6 @@ export default function Testimonials() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             {description}
           </p>
-        </div>
-
-        {/* Main Testimonial */}
-        <div className="relative max-w-3xl mx-auto mb-16">
-          <Card className="shadow-2xl rounded-xl p-8 bg-secondary">
-            <blockquote className="text-center text-xl font-medium text-card-foreground">
-              &ldquo;{mainTestimonial.quote}&rdquo;
-            </blockquote>
-            <footer className="mt-6 text-center">
-              <p className="font-semibold text-card-foreground">{mainTestimonial.name}</p>
-              <p className="text-sm text-muted-foreground">{mainTestimonial.role}</p>
-            </footer>
-          </Card>
         </div>
 
         {/* Other Testimonials */}
