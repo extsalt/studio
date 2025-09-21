@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MenuBarDemo } from '@/components/layout/menubar';
 import HistoryAndValues from '@/components/sections/history-and-values';
+import EducationalPrograms from '@/components/sections/educational-programs';
 
 export default function Home() {
   return (
@@ -76,6 +77,7 @@ export default function Home() {
         </div>
       </div>
       <HistoryAndValues />
+      <EducationalPrograms />
     </>
   );
 }
