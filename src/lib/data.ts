@@ -180,3 +180,42 @@ export const newsAndUpdatesData = {
     },
   ],
 };
+
+export const testimonialsData = {
+  title: 'What People Say',
+  description: 'Hear from our students, parents, and alumni about their experiences',
+  mainTestimonial: {
+    quote: 'The quality of education and personal attention each student receives here is exceptional. My children have grown both academically and personally.',
+    name: 'Mohan',
+    role: 'Parent of Two Students',
+  },
+  testimonials: [
+    {
+      initial: 'R',
+      name: 'Rahul',
+      role: 'Alumni, Class of 2022',
+      quote: 'The foundation I received here has been invaluable in my university studies. The teachers really prepare you for future success.',
+      rating: 5,
+      avatarBg: 'bg-blue-100',
+      avatarText: 'text-blue-700',
+    },
+    {
+      initial: 'M',
+      name: 'Abhishek',
+      role: 'Current Student',
+      quote: 'I love the diverse range of activities and opportunities available here. The teachers are supportive and truly care about our success.',
+      rating: 5,
+      avatarBg: 'bg-green-100',
+      avatarText: 'text-green-700',
+    },
+    {
+      initial: 'J',
+      name: 'Sinesh',
+      role: 'Parent',
+      quote: "The school's commitment to excellence and character development has made a significant impact on my child's growth.",
+      rating: 5,
+      avatarBg: 'bg-purple-100',
+      avatarText: 'text-purple-700',
+    },
+  ],
+};

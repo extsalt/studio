@@ -10,6 +10,7 @@ import Admissions from '@/components/sections/admissions';
 import NewsAndUpdates from '@/components/sections/news-and-updates';
 import Newsletter from '@/components/sections/newsletter';
 import Gallery from '@/components/sections/gallery';
+import Testimonials from '@/components/sections/testimonials';
 
 export default function Home() {
   return (
@@ -88,6 +89,7 @@ export default function Home() {
       <NewsAndUpdates />
       <Newsletter />
       <Gallery />
+      <Testimonials />
     </>
   );
 }
