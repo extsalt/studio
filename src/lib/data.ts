@@ -10,8 +10,8 @@ function getImage(id: string): ImagePlaceholder {
 }
 
 export const siteConfig = {
-    name: "Acme Academy",
-    description: "Excellence in Education. Nurturing young minds for a brighter future.",
+    name: "Prabhawati VidyaPeeth",
+    description: "Excellence in Education Since 2010 | Nurturing Future Leaders.",
     navLinks: [
       { href: '#home', label: 'Home' },
       { 
@@ -35,8 +35,8 @@ export const siteConfig = {
 };
 
 export const heroData = {
-    headline: "Welcome to Acme Academy",
-    subheadline: "Nurturing young minds for a brighter future.",
+    headline: "Welcome to Prabhawati VidyaPeeth",
+    subheadline: "Excellence in Education Since 2010 | Nurturing Future Leaders",
     image: getImage('hero'),
 };
 
