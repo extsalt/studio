@@ -22,7 +22,7 @@ export default function Testimonials() {
   const { title, description, mainTestimonial, testimonials } = testimonialsData;
 
   return (
-    <section className="py-16 md:py-24 bg-secondary/30">
+    <section className="py-16 md:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">{title}</h2>
@@ -39,7 +39,7 @@ export default function Testimonials() {
                 <Quote className="h-8 w-8" />
              </div>
           </div>
-          <Card className="shadow-2xl rounded-xl p-8 bg-card">
+          <Card className="shadow-2xl rounded-xl p-8 bg-secondary">
             <blockquote className="text-center text-xl font-medium text-card-foreground">
               &ldquo;{mainTestimonial.quote}&rdquo;
             </blockquote>
@@ -53,8 +53,8 @@ export default function Testimonials() {
         {/* Other Testimonials */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="flex flex-col shadow-lg rounded-lg overflow-hidden">
-              <CardHeader className="p-6 bg-card flex-grow">
+            <Card key={index} className="flex flex-col shadow-lg rounded-lg overflow-hidden bg-secondary">
+              <CardHeader className="p-6 flex-grow">
                 <div className="flex items-center gap-4 mb-4">
                     <Avatar>
                         <AvatarFallback className={cn(testimonial.avatarBg, testimonial.avatarText, 'font-bold')}>
@@ -70,7 +70,7 @@ export default function Testimonials() {
                   &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
               </CardHeader>
-              <CardContent className="p-6 bg-card border-t">
+              <CardContent className="p-6 border-t">
                 <StarRating rating={testimonial.rating} />
               </CardContent>
             </Card>

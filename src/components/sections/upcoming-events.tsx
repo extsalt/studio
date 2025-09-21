@@ -21,10 +21,10 @@ const EventCard = ({
       <CardTitle className="text-xl font-bold">{title}</CardTitle>
       <p className="text-sm">{date}</p>
     </CardHeader>
-    <CardContent className="p-6 bg-card flex-grow">
+    <CardContent className="p-6 bg-secondary flex-grow">
       <p className="text-card-foreground/80">{description}</p>
     </CardContent>
-    <CardFooter className="p-6 bg-card">
+    <CardFooter className="p-6 bg-secondary">
       <Button className={`w-full text-white ${buttonColor}`}>Learn More</Button>
     </CardFooter>
   </Card>

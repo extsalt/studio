@@ -20,7 +20,7 @@ import Classes from '@/components/sections/classes';
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-background to-secondary">
+    <div className="bg-background">
       <Header />
       <main>
         <Hero />

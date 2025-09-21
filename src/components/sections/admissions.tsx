@@ -4,7 +4,7 @@ import AdmissionForm from '../client/admission-form';
 
 export default function Admissions() {
   return (
-    <section id="admissions" className="py-16 md:py-24">
+    <section id="admissions" className="py-16 md:py-24 bg-secondary/30">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
@@ -14,7 +14,7 @@ export default function Admissions() {
             </div>
             <ol className="space-y-6 max-w-md mx-auto">
               {admissionsData.steps.map((step, index) => (
-                <li key={index} className="flex items-start justify-center">
+                <li key={index} className="flex items-start justify-center text-center">
                   <div className="flex-shrink-0">
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
                       {index + 1}

@@ -75,7 +75,7 @@ export default function HistoryAndValues() {
             <h3 className="text-3xl font-bold text-card-foreground">Why Choose Us?</h3>
             <ul className="space-y-6 text-center">
                 {features.map((feature) => (
-                    <li key={feature.title} className="flex items-center flex-col gap-4">
+                    <li key={feature.title} className="flex items-center flex-col gap-4 text-center">
                         <div className="flex-shrink-0">{feature.icon}</div>
                         <div>
                             <h4 className="font-semibold text-lg text-card-foreground">{feature.title}</h4>
