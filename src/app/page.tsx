@@ -18,7 +18,7 @@ import Contact from '@/components/sections/contact';
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen bg-background text-foreground flex flex-col p-4">
+      <div className="min-h-screen bg-background text-foreground flex flex-col items-center p-4">
         <MenuBarDemo />
         <div className="flex-grow flex items-center justify-center">
           <div className="container mx-auto">
