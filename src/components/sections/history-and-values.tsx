@@ -71,9 +71,9 @@ export default function HistoryAndValues() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 max-w-lg mx-auto text-center">
             <h3 className="text-3xl font-bold text-card-foreground">Why Choose Us?</h3>
-            <ul className="space-y-6">
+            <ul className="space-y-6 text-left">
                 {features.map((feature) => (
                     <li key={feature.title} className="flex items-start gap-4">
                         <div className="flex-shrink-0">{feature.icon}</div>
