@@ -56,7 +56,7 @@ export default function HistoryAndValues() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-24 text-center">
           {values.map((item) => (
-            <Card key={item.title} className="text-center p-8 bg-gradient-to-br from-background to-secondary/20 shadow-lg">
+            <Card key={item.title} className="text-center p-8 bg-gradient-to-b from-background to-secondary/20 shadow-lg">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-4 rounded-full">
                   {item.icon}
